@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="16"
+                android:padding="8dp"
+                android:alignmentMode="alignMargins"
+                android:orientation="vertical"
+                >
+                <!-- row 1-->
+                <TextView
+                    android:id="@+id/texUltrasound"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Wall thickness on ultrasound"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edtUltrasound"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    android:inputType="number" />
+                <!-- row 2-->
+                <TextView
+                    android:id="@+id/textAmylase"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="The enzyme Amylase"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edtAmylase"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    android:inputType="number" />
+                <!-- row 3-->
+                <TextView
+                    android:id="@+id/texLipase"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="The enzyme Lipase"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edtLipase"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    android:inputType="number" />
+                <!-- row 4-->
+                <TextView
+                    android:id="@+id/textCRP"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="CRP"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edtCRP"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    />
+                <!-- row 5-->
+                <TextView
+                    android:id="@+id/textBilirubin"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Bilirubin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edtBilirubin"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    />
+                <!-- row 6-->
+                <TextView
+                    android:id="@+id/textGGT"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="GGT"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edtGGT"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    />
+                <!-- row 7-->
+                <TextView
+                    android:id="@+id/textAST"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="AST"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edtAST"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    android:inputType="number"
+                   />
+                <!-- row 8 -->
+                <TextView
+                    android:id="@+id/textCholedoch"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Choledoch diameter (mm)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edtCholedoch"
+                    android:layout_row="8"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    />
+                <!-- row 9 -->
+                <TextView
+                    android:id="@+id/textWBC"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="@string/wbc"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edtWBC"
+                    android:layout_row="9"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:layout_columnWeight="@integer/material_motion_duration_long_1"
+                    />
+                <!-- row 10 -->
+                <TextView
+                    android:id="@+id/textHydropic"
+                    android:layout_row="10"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Is the gallbladder hydropic?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:id="@+id/radiohyropic"
+                    android:layout_row="10"
+                    android:layout_column="0">
+
+                    <RadioButton
+                        android:id="@+id/RadioHydropicYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Yes"
+                       />
+                    <RadioButton
+                        android:id="@+id/RadioHydropicNo"
+                        android:text="No"
+                        android:checked="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+                <!-- row 11 -->
+                <TextView
+                    android:id="@+id/textMurphy"
+                    android:layout_row="11"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Murphy'ssymptom"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:id="@+id/radioMurphy"
+                    android:layout_row="11"
+                    android:layout_column="0">
+
+                    <RadioButton
+                        android:id="@+id/RadioMurphyPositive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="(+) Positive "
+                        />
+                    <RadioButton
+                        android:id="@+id/RadioMurphyNegative"
+                        android:text="(-) Negative"
+                        android:checked="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+                <!-- row 12 -->
+                <TextView
+                    android:id="@+id/textAbdPain"
+                    android:layout_row="12"
+                    android:layout_column="0"
+                    android:textSize="18sp"
+                    android:text="Abdominal Pain"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:id="@+id/radiopain"
+                    android:layout_row="12"
+                    android:layout_column="0">
+
+                    <RadioButton
+                        android:id="@+id/RadioAbdPainYes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/yes"
+                        />
+                    <RadioButton
+                        android:id="@+id/RadioAbdPainNo"
+                        android:text="@string/no"
+                        android:checked="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_row="13"
+                    android:layout_column="0"
+                    android:text="@string/calculate" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="13"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:text="@string/clear" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/text_result"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="8sp"
+                android:textSize="24sp"
+                android:text="Click calculate to find out your diagnosis"/>
+
+
+        </LinearLayout >
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
